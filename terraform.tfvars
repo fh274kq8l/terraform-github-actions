@@ -1,3 +1,2 @@
-# Sample values
-resource_group_name = "rg-terraform-github-actions"
-location            = "westeurope"
+aks_service_principal_app_id = "<service_principal_app_id>"
+aks_service_principal_client_secret = "<service_principal_password>"
