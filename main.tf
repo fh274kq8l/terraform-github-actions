@@ -23,7 +23,7 @@ terraform {
 
 provider "azurerm" {
   features {}
-  use_oidc = true
+  #use_oidc = true
 }
 
 resource "azurerm_resource_group" "example" {
@@ -43,7 +43,7 @@ resource "azurerm_kubernetes_cluster" "example" {
     vm_size    = "Standard_DS2_v2"
   }
 
-  # identity {
-  #   type = "SystemAssigned"
-  # }
+  identity {
+    type = "SystemAssigned"
+  }
 }
