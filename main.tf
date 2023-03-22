@@ -8,8 +8,8 @@ terraform {
 
   # Update this block with the location of your terraform state file
   backend "azurerm" {
-    resource_group_name  = "rg-satfstate20032023-dev-001"
-    storage_account_name = "satfstate20032023"
+    resource_group_name  = "rg-enterprise-tf-dependencies"
+    storage_account_name = "saaksbaseline"
     container_name       = "tfstate"
     key                  = "terraform.tfstate"
     use_oidc             = true
